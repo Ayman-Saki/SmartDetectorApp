@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette Smart Detector -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background_light">#F8F9FE</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#757575</color>
+    <color name="blue_text">#3F51B5</color>
+
+    <color name="confidence_bar_bg">#E8EAF6</color>
+    <color name="confidence_bar_fill">#3F51B5</color>
+
+    <color name="status_green">#4CAF50</color>
+    <color name="freeze_blue">#3F51B5</color>
+    <color name="freeze_glow">#4D3F51B5</color>
+
+    <!-- Launcher -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+    <!-- Compatibilité avec les fichiers existants -->
+    <color name="bottom_sheet_background">#FFFFFF</color>
+    <color name="bottom_sheet_text_color">#222222</color>
+    <color name="toolbar_background">#3F51B5</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <color name="bounding_box_color">#3F51B5</color>
+</resources>

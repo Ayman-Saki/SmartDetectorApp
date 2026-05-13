@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="org.tensorflow.lite.examples.imageclassification"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+10        android:targetSdkVersion="33" />
+11
+12    <!-- Enable instant app support -->
+13    <dist:module dist:instant="true" />
+13-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:8:5-40
+13-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:8:18-37
+14
+15    <!-- Declare features -->
+16    <uses-feature android:name="android.hardware.camera" />
+16-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:11:5-60
+16-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:11:19-57
+17
+18    <!-- Declare permissions -->
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:14:5-65
+19-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+23
+24    <permission
+24-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+25        android:name="org.tensorflow.lite.examples.imageclassification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="org.tensorflow.lite.examples.imageclassification.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:16:5-46:19
+31        android:allowBackup="true"
+31-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:17:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\6de5b400fa24861a1bf71e9422a6ef18\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:18:9-43
+36        android:label="@string/app_name"
+36-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:19:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:20:9-54
+38        android:supportsRtl="true"
+38-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:21:9-35
+39        android:taskAffinity=""
+39-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:23:9-32
+40        android:testOnly="true"
+41        android:theme="@style/AppTheme" >
+41-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:22:9-40
+42        <activity
+42-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:25:9-45:20
+43            android:name="org.tensorflow.lite.examples.imageclassification.MainActivity"
+43-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:26:13-41
+44            android:clearTaskOnLaunch="true"
+44-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:27:13-45
+45            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+45-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:28:13-91
+46            android:exported="true"
+46-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:29:13-36
+47            android:resizeableActivity="true"
+47-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:30:13-46
+48            android:rotationAnimation="seamless" >
+48-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:31:13-49
+49
+50            <!-- Main app intent filter -->
+51            <intent-filter>
+51-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:35:13-39:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:36:17-69
+52-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:36:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:38:17-77
+54-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:38:27-74
+55            </intent-filter>
+56
+57            <!-- Declare notch support -->
+58            <meta-data
+58-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:42:13-44:40
+59                android:name="android.notch_support"
+59-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:43:17-53
+60                android:value="true" />
+60-->D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:44:17-37
+61        </activity>
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\e740dcb436856cf628a65bf609a169c1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+69
+70        <service
+70-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:24:9-33:19
+71            android:name="androidx.camera.core.impl.MetadataHolderService"
+71-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:25:13-75
+72            android:enabled="false"
+72-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:26:13-36
+73            android:exported="false" >
+73-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:27:13-37
+74            <meta-data
+74-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:30:13-32:89
+75                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+75-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:31:17-103
+76                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+76-->[androidx.camera:camera-camera2:1.2.2] C:\Users\dell\.gradle\caches\transforms-3\5ca06a0bdef0586cfd2439cd73c841bd\transformed\camera-camera2-1.2.2\AndroidManifest.xml:32:17-86
+77        </service>
+78
+79        <provider
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+81            android:authorities="org.tensorflow.lite.examples.imageclassification.androidx-startup"
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+82            android:exported="false" >
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+83            <meta-data
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+85                android:value="androidx.startup" />
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\587b823e8a8ce567d5cdf49feffa2279\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dell\.gradle\caches\transforms-3\14368ca54b98ddbe0445f95044018322\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dell\.gradle\caches\transforms-3\14368ca54b98ddbe0445f95044018322\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+88                android:value="androidx.startup" />
+88-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\dell\.gradle\caches\transforms-3\14368ca54b98ddbe0445f95044018322\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+89        </provider>
+90    </application>
+91
+92</manifest>

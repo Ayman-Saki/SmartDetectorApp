@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_padding">16dp</dimen>
+    <dimen name="bottom_sheet_peek_height">80dp</dimen>
+    <dimen name="bottom_sheet_text_size">16sp</dimen>
+    <dimen name="bottom_sheet_seperate_results_line">2dp</dimen>
+
+    <dimen name="bottom_sheet_default_row_margin">16dp</dimen>
+    <dimen name="bottom_sheet_control_btn_size">48dp</dimen>
+    <dimen name="bottom_sheet_control_text_side_margin">8dp</dimen>
+    <dimen name="bottom_sheet_spinner_delegate_min_width">100dp</dimen>
+    <dimen name="bottom_sheet_spinner_model_min_width">100dp</dimen>
+
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

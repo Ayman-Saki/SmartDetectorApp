@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+    <string-array name="models_spinner_titles">
+        <item>MobileNet V1</item>
+        <item>EfficientNet Lite0</item>
+        <item>EfficientNet Lite1</item>
+        <item>EfficientNet Lite2</item>
+    </string-array>
+    <color name="accent">#FF4081</color>
+    <color name="background_light">#F8F9FE</color>
+    <color name="black">#000000</color>
+    <color name="blue_text">#3F51B5</color>
+    <color name="bottom_sheet_background">#FFFFFF</color>
+    <color name="bottom_sheet_text_color">#222222</color>
+    <color name="bounding_box_color">#3F51B5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="confidence_bar_bg">#E8EAF6</color>
+    <color name="confidence_bar_fill">#3F51B5</color>
+    <color name="freeze_blue">#3F51B5</color>
+    <color name="freeze_glow">#4D3F51B5</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="status_green">#4CAF50</color>
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#757575</color>
+    <color name="toolbar_background">#3F51B5</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="bottom_sheet_control_btn_size">48dp</dimen>
+    <dimen name="bottom_sheet_control_text_side_margin">8dp</dimen>
+    <dimen name="bottom_sheet_default_row_margin">16dp</dimen>
+    <dimen name="bottom_sheet_padding">16dp</dimen>
+    <dimen name="bottom_sheet_peek_height">80dp</dimen>
+    <dimen name="bottom_sheet_seperate_results_line">2dp</dimen>
+    <dimen name="bottom_sheet_spinner_delegate_min_width">100dp</dimen>
+    <dimen name="bottom_sheet_spinner_model_min_width">100dp</dimen>
+    <dimen name="bottom_sheet_text_size">16sp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <integer name="bottom_sheet_control_text_min_ems">3</integer>
+    <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
+    <string name="alt_bottom_sheet_max_results_button_minus">Decreasing maximum classified results button</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Increasing maximum classified results button</string>
+    <string name="alt_bottom_sheet_thread_button_minus">Decrease the number of threads used</string>
+    <string name="alt_bottom_sheet_thread_button_plus">Increase the number of threads used</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Decreasing threshold of classified image results button</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Increasing threshold of classified image results button</string>
+    <string name="app_name">Smart Detector</string>
+    <string name="btn_capture">Capturer</string>
+    <string name="btn_freeze">Freeze\n(Arrêt sur image)</string>
+    <string name="btn_save">Sauvegarder</string>
+    <string name="default_inference_time">0ms</string>
+    <string name="default_max_results">3</string>
+    <string name="default_threshold">0.50</string>
+    <string name="empty_history">Aucun historique disponible</string>
+    <string name="label_about">À propos</string>
+    <string name="label_confidence_threshold">Seuil de confiance</string>
+    <string name="label_delegate">Delegate</string>
+    <string name="label_fps">Frames per Second</string>
+    <string name="label_inference_mode">Mode d\'inférence</string>
+    <string name="label_interence_time">Inference Time</string>
+    <string name="label_max_results">Max Results</string>
+    <string name="label_models">ML Model</string>
+    <string name="label_theme">Thème</string>
+    <string name="label_threads">Number of Threads</string>
+    <string name="menu_history">Historique</string>
+    <string name="menu_home">Accueil</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="status_detected">Objet détecté</string>
+    <string name="status_searching">Recherche...</string>
+    <string name="title_detection">Smart Detector</string>
+    <string name="title_history">Historique</string>
+    <string name="title_settings">Paramètres</string>
+    <style name="ActionButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+    <style name="BottomSheetSpinnerItemStyle" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textSize">@dimen/bottom_sheet_text_size</item>
+    </style>
+</resources>
