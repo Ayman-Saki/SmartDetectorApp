@@ -60,6 +60,11 @@
     <string name="default_max_results">3</string>
     <string name="default_threshold">0.50</string>
     <string name="empty_history">Aucun historique disponible</string>
+    <string name="gcm_defaultSenderId" translatable="false">679535046881</string>
+    <string name="google_api_key" translatable="false">AIzaSyCbPcKoGCKDVOPiIlEu55YirPb3Op-goSg</string>
+    <string name="google_app_id" translatable="false">1:679535046881:android:98c6a2dd54419845a687a0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCbPcKoGCKDVOPiIlEu55YirPb3Op-goSg</string>
+    <string name="google_storage_bucket" translatable="false">smart-detector-475da.firebasestorage.app</string>
     <string name="label_about">À propos</string>
     <string name="label_confidence_threshold">Seuil de confiance</string>
     <string name="label_delegate">Delegate</string>
@@ -73,6 +78,7 @@
     <string name="menu_history">Historique</string>
     <string name="menu_home">Accueil</string>
     <string name="menu_settings">Paramètres</string>
+    <string name="project_id" translatable="false">smart-detector-475da</string>
     <string name="status_detected">Objet détecté</string>
     <string name="status_searching">Recherche...</string>
     <string name="title_detection">Smart Detector</string>

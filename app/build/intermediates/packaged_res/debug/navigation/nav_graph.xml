@@ -3,12 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/permissions_fragment">
+    app:startDestination="@id/loginFragment">
 
+    <!-- LOGIN -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/activity_login_fragment">
+
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+
+        <action
+            android:id="@+id/action_login_to_camera"
+            app:destination="@id/camera_fragment" />
+    </fragment>
+
+    <!-- REGISTER -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/activity_register_fragment">
+
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_register_to_camera"
+            app:destination="@id/camera_fragment" />
+    </fragment>
+
+    <!-- PROFILE -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/activity_profile_fragment" />
+
+    <!-- EXISTING -->
     <fragment
         android:id="@+id/permissions_fragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.PermissionsFragment"
         android:label="Smart Detector">
+
         <action
             android:id="@+id/action_permissions_to_camera"
             app:destination="@id/camera_fragment"
@@ -33,4 +74,11 @@
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.SettingsFragment"
         android:label="Paramètres"
         tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:ignore="DuplicateIds" />
+
 </navigation>

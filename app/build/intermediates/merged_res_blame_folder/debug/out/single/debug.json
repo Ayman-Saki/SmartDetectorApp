@@ -1,198 +1,210 @@
 [
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_item_history.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/item_history.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_home_indigo.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_home_indigo.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_item_classification_result.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/item_classification_result.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_minus.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_minus.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_home_blue.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_home_blue.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_fragment_history.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/fragment_history.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_activity_main.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/activity_main.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_freeze_border.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/freeze_border.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_circle_button_bg.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/circle_button_bg.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_camera_blue.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_camera_blue.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/color_nav_item_color.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/color/nav_item_color.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-mdpi/ic_launcher.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_nav_home.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_nav_home.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_item_classification_result.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/item_classification_result.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_minus.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_minus.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_camera_blue.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_camera_blue.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_plus.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_plus.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_activity_login_fragment.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/activity_login_fragment.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_badge_background.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/badge_background.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_history_blue.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_history_blue.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_info_bottom_sheet.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/info_bottom_sheet.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_nav_home.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_nav_home.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_fragment_camera.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/fragment_camera.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_freeze.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_freeze.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_home.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_home.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_fragment_history.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/fragment_history.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_activity_register_fragment.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/activity_register_fragment.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_tooltip_bg.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/tooltip_bg.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_flash.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_flash.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_home_blue.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_home_blue.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_custom_progress_bar.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/custom_progress_bar.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_home_indigo.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_home_indigo.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_activity_main.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/activity_main.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_freeze_border.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/freeze_border.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_history_blue.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_history_blue.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_settings_indigo.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_settings_indigo.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable-v24_tfl_logo.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable-v24/tfl_logo.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_circle_button_bg.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/circle_button_bg.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_icn_chevron_up.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/icn_chevron_up.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_info_bottom_sheet.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/info_bottom_sheet.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_circle_bg_light.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/circle_bg_light.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_activity_profile_fragment.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/activity_profile_fragment.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_fragment_settings.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/fragment_settings.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/navigation_nav_graph.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/navigation/nav_graph.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_icn_chevron_up.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/icn_chevron_up.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_live_dot.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/live_dot.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_live_dot.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/live_dot.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/color_nav_item_color.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/color/nav_item_color.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_settings_blue.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_settings_blue.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable-v24_tfl_logo.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable-v24/tfl_logo.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-pngs-44:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_settings_blue.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_settings_blue.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_flash.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_flash.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_circle_bg_light.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/circle_bg_light.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/layout_fragment_camera.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/layout/fragment_camera.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_tooltip_bg.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/tooltip_bg.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_settings_indigo.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_settings_indigo.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/drawable_ic_home.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/drawable/ic_home.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_freeze.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_freeze.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-hdpi/ic_launcher.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/menu_bottom_nav_menu.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/menu/bottom_nav_menu.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_custom_progress_bar.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/custom_progress_bar.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_ic_plus.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/ic_plus.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/navigation_nav_graph.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/navigation/nav_graph.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_fragment_settings.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/fragment_settings.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/menu_bottom_nav_menu.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/drawable_badge_background.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/drawable/badge_background.xml"
     },
     {
-        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-48:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "org.tensorflow.lite.examples.imageclassification.app-main-50:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-merged_res-56:/layout_item_history.xml.flat",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-58:/layout/item_history.xml"
     }
 ]

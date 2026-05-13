@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679535046881",
+    "project_id": "smart-detector-475da",
+    "storage_bucket": "smart-detector-475da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679535046881:android:98c6a2dd54419845a687a0",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.imageclassification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbPcKoGCKDVOPiIlEu55YirPb3Op-goSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
