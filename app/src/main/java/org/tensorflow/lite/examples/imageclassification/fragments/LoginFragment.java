@@ -21,11 +21,8 @@ import org.tensorflow.lite.examples.imageclassification.R;
 public class LoginFragment extends Fragment {
 
     private FirebaseAuth mAuth;
-
     private TextInputEditText emailInput, passwordInput;
     private MaterialButton loginBtn;
-
-    public LoginFragment() {}
 
     @Nullable
     @Override
@@ -37,11 +34,12 @@ public class LoginFragment extends Fragment {
 
         mAuth = FirebaseAuth.getInstance();
 
-        // 🔥 AUTO LOGIN (SAFE)
+        // AUTO LOGIN
         if (mAuth.getCurrentUser() != null) {
-            // user already logged in → go to app
-            view.post(() -> Navigation.findNavController(view)
-                    .navigate(R.id.camera_fragment));
+            view.post(() ->
+                    Navigation.findNavController(view)
+                            .navigate(R.id.camera_fragment)
+            );
         }
 
         emailInput = view.findViewById(R.id.emailInput);
@@ -50,11 +48,11 @@ public class LoginFragment extends Fragment {
 
         loginBtn.setOnClickListener(v -> loginUser(view));
 
-        // 🔥 GO TO REGISTER
+        // go register
         TextView goRegister = view.findViewById(R.id.goRegister);
         goRegister.setOnClickListener(v ->
                 Navigation.findNavController(v)
-                        .navigate(R.id.registerFragment)
+                        .navigate(R.id.action_login_to_register)
         );
 
         return view;
@@ -62,13 +60,8 @@ public class LoginFragment extends Fragment {
 
     private void loginUser(View view) {
 
-        String email = emailInput.getText() != null
-                ? emailInput.getText().toString().trim()
-                : "";
-
-        String password = passwordInput.getText() != null
-                ? passwordInput.getText().toString().trim()
-                : "";
+        String email = emailInput.getText() != null ? emailInput.getText().toString().trim() : "";
+        String password = passwordInput.getText() != null ? passwordInput.getText().toString().trim() : "";
 
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(getContext(), "Fill all fields", Toast.LENGTH_SHORT).show();
@@ -80,14 +73,12 @@ public class LoginFragment extends Fragment {
 
                     if (task.isSuccessful()) {
 
-                        Toast.makeText(getContext(), "Login successful", Toast.LENGTH_SHORT).show();
-
                         Navigation.findNavController(view)
-                                .navigate(R.id.camera_fragment);
+                                .navigate(R.id.action_login_to_camera);
 
                     } else {
                         Toast.makeText(getContext(),
-                                "Error: " + task.getException().getMessage(),
+                                task.getException().getMessage(),
                                 Toast.LENGTH_SHORT).show();
                     }
                 });

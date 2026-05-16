@@ -1,9 +1,13 @@
 package org.tensorflow.lite.examples.imageclassification.fragments;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,7 +34,8 @@ public class RegisterFragment extends Fragment {
     private TextInputEditText nameInput, emailInput, passwordInput;
     private MaterialButton registerBtn;
 
-    public RegisterFragment() {}
+    private static final int PICK_IMAGE_REQUEST = 1;
+    private Uri selectedImageUri;
 
     @Nullable
     @Override
@@ -47,32 +52,32 @@ public class RegisterFragment extends Fragment {
         emailInput = view.findViewById(R.id.emailInput);
         passwordInput = view.findViewById(R.id.passwordInput);
         registerBtn = view.findViewById(R.id.registerBtn);
+        ImageView profileImage = view.findViewById(R.id.profileImage);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) MaterialButton pickImageBtn = view.findViewById(R.id.pickImageBtn);
 
         registerBtn.setOnClickListener(v -> registerUser(view));
 
-        // 🔥 GO TO LOGIN
         TextView goLogin = view.findViewById(R.id.goLogin);
         goLogin.setOnClickListener(v ->
                 Navigation.findNavController(v)
-                        .navigate(R.id.loginFragment)
+                        .navigate(R.id.action_register_to_login)
         );
+
+        pickImageBtn.setOnClickListener(v -> openGallery());
 
         return view;
     }
 
+    private void openGallery() {
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+    }
     private void registerUser(View view) {
 
-        String name = nameInput.getText() != null
-                ? nameInput.getText().toString().trim()
-                : "";
-
-        String email = emailInput.getText() != null
-                ? emailInput.getText().toString().trim()
-                : "";
-
-        String password = passwordInput.getText() != null
-                ? passwordInput.getText().toString().trim()
-                : "";
+        String name = nameInput.getText() != null ? nameInput.getText().toString().trim() : "";
+        String email = emailInput.getText() != null ? emailInput.getText().toString().trim() : "";
+        String password = passwordInput.getText() != null ? passwordInput.getText().toString().trim() : "";
 
         if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
             Toast.makeText(getContext(), "Fill all fields", Toast.LENGTH_SHORT).show();
@@ -89,33 +94,37 @@ public class RegisterFragment extends Fragment {
                         Map<String, Object> user = new HashMap<>();
                         user.put("name", name);
                         user.put("email", email);
-                        user.put("imageUrl", "DEFAULT"); // no Firebase Storage (as agreed)
+                        if (selectedImageUri != null) {
+                            user.put("imageUrl", selectedImageUri.toString());
+                        } else {
+                            user.put("imageUrl", "");
+                        }
 
                         db.collection("users")
                                 .document(uid)
                                 .set(user)
-                                .addOnSuccessListener(unused -> {
-
-                                    Toast.makeText(getContext(), "Account created", Toast.LENGTH_SHORT).show();
-
-                                    view.post(() ->
-                                            Navigation.findNavController(view)
-                                                    .navigate(R.id.camera_fragment)
-                                    );
-                                })
-                                .addOnFailureListener(e ->
-                                        Toast.makeText(getContext(),
-                                                "Firestore error: " + e.getMessage(),
-                                                Toast.LENGTH_SHORT).show()
+                                .addOnSuccessListener(unused ->
+                                        Navigation.findNavController(view)
+                                                .navigate(R.id.action_register_to_camera)
                                 );
 
                     } else {
                         Toast.makeText(getContext(),
-                                task.getException() != null
-                                        ? task.getException().getMessage()
-                                        : "Registration failed",
+                                task.getException().getMessage(),
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == PICK_IMAGE_REQUEST && data != null && data.getData() != null) {
+            selectedImageUri = data.getData();
+
+            ImageView profileImage = getView().findViewById(R.id.profileImage);
+            profileImage.setImageURI(selectedImageUri);
+        }
     }
 }

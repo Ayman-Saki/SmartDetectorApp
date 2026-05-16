@@ -1,14 +1,25 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
+
+    ext.kotlin_version = '1.8.22'
+
     dependencies {
         classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.1'
         classpath 'de.undercouch:gradle-download-task:4.1.2'
         classpath 'com.google.gms:google-services:4.3.15'
+
+        // IMPORTANT
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22"
     }
 }
+
 plugins {
     id 'com.android.application' version '8.2.2' apply false
     id 'com.android.library' version '8.2.2' apply false
+
+    // IMPORTANT
+    id 'org.jetbrains.kotlin.android' version '1.8.22' apply false
 }
 
 task clean(type: Delete) {

@@ -3,6 +3,12 @@ build/
 */build/
 app/build/
 
+/build
+/.idea
+*.iml
+.gradle
+/local.properties
+
 # IntelliJ / Android Studio
 .idea/
 *.iml

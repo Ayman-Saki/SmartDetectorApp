@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/permissions_fragment">
 
-    <!-- LOGIN -->
+    <!-- ================= LOGIN ================= -->
     <fragment
         android:id="@+id/loginFragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.LoginFragment"
@@ -18,10 +18,12 @@
 
         <action
             android:id="@+id/action_login_to_camera"
-            app:destination="@id/camera_fragment" />
+            app:destination="@id/camera_fragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- REGISTER -->
+    <!-- ================= REGISTER ================= -->
     <fragment
         android:id="@+id/registerFragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.RegisterFragment"
@@ -30,25 +32,29 @@
 
         <action
             android:id="@+id/action_register_to_login"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
 
         <action
             android:id="@+id/action_register_to_camera"
-            app:destination="@id/camera_fragment" />
+            app:destination="@id/camera_fragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- PROFILE -->
+    <!-- ================= PROFILE ================= -->
     <fragment
         android:id="@+id/profileFragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/activity_profile_fragment" />
 
-    <!-- EXISTING -->
+    <!-- ================= PERMISSIONS (START HERE) ================= -->
     <fragment
         android:id="@+id/permissions_fragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.PermissionsFragment"
-        android:label="Smart Detector">
+        android:label="Permissions">
 
         <action
             android:id="@+id/action_permissions_to_camera"
@@ -57,28 +63,30 @@
             app:popUpToInclusive="true" />
     </fragment>
 
+    <!-- ================= CAMERA ================= -->
     <fragment
         android:id="@+id/camera_fragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.CameraFragment"
-        android:label="Smart Detector"
-        tools:layout="@layout/fragment_camera" />
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera">
 
+        <action
+            android:id="@+id/action_camera_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <!-- ================= HISTORY ================= -->
     <fragment
         android:id="@+id/history_fragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.HistoryFragment"
         android:label="Historique"
         tools:layout="@layout/fragment_history" />
 
+    <!-- ================= SETTINGS ================= -->
     <fragment
         android:id="@+id/settings_fragment"
         android:name="org.tensorflow.lite.examples.imageclassification.fragments.SettingsFragment"
         android:label="Paramètres"
         tools:layout="@layout/fragment_settings" />
-
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="org.tensorflow.lite.examples.imageclassification.fragments.ProfileFragment"
-        android:label="Profile"
-        tools:ignore="DuplicateIds" />
 
 </navigation>

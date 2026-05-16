@@ -10,8 +10,11 @@
         android:targetSdkVersion="34" />
     <!-- Enable instant app support -->
     <dist:module dist:instant="true" /> <!-- Declare features -->
-    <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -37,15 +40,6 @@
         android:taskAffinity=""
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="org.tensorflow.lite.examples.imageclassification.fragments.ProfileFragment"
-            android:exported="false" />
-        <activity
-            android:name="org.tensorflow.lite.examples.imageclassification.fragments.RegisterFragment"
-            android:exported="false" />
-        <activity
-            android:name="org.tensorflow.lite.examples.imageclassification.fragments.LoginFragment"
-            android:exported="false" />
         <activity
             android:name="org.tensorflow.lite.examples.imageclassification.MainActivity"
             android:clearTaskOnLaunch="true"
@@ -123,6 +117,14 @@
                 android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
@@ -139,15 +141,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <service
-            android:name="androidx.camera.core.impl.MetadataHolderService"
-            android:enabled="false"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-        </service>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

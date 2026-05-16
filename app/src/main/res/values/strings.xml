@@ -23,21 +23,21 @@
 
     <string name="empty_history">Aucun historique disponible</string>
 
-    <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
+    <string name="alt_bottom_sheet_chevron">Indicateur d\'extension du volet inférieur</string>
 
-    <string name="alt_bottom_sheet_max_results_button_minus">Decreasing maximum classified results button</string>
-    <string name="alt_bottom_sheet_max_results_button_plus">Increasing maximum classified results button</string>
-    <string name="alt_bottom_sheet_threshold_button_minus">Decreasing threshold of classified image results button</string>
-    <string name="alt_bottom_sheet_threshold_button_plus">Increasing threshold of classified image results button</string>
-    <string name="alt_bottom_sheet_thread_button_minus">Decrease the number of threads used</string>
-    <string name="alt_bottom_sheet_thread_button_plus">Increase the number of threads used</string>
+    <string name="alt_bottom_sheet_max_results_button_minus">Bouton de diminution du nombre maximum de résultats</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Bouton d\'augmentation du nombre maximum de résultats</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Bouton de diminution du seuil de confiance</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Bouton d\'augmentation du seuil de confiance</string>
+    <string name="alt_bottom_sheet_thread_button_minus">Bouton de diminution du nombre de threads</string>
+    <string name="alt_bottom_sheet_thread_button_plus">Bouton d\'augmentation du nombre de threads</string>
 
-    <string name="label_interence_time">Inference Time</string>
-    <string name="label_fps">Frames per Second</string>
-    <string name="label_max_results">Max Results</string>
-    <string name="label_threads">Number of Threads</string>
-    <string name="label_delegate">Delegate</string>
-    <string name="label_models">ML Model</string>
+    <string name="label_inference_time">Temps d\'inférence : %1$d ms</string>
+    <string name="label_fps">Images par seconde</string>
+    <string name="label_max_results">Résultats max</string>
+    <string name="label_threads">Nombre de threads</string>
+    <string name="label_delegate">Délégué</string>
+    <string name="label_models">Modèle ML</string>
     <string name="default_threshold">0.50</string>
     <string name="default_inference_time">0ms</string>
     <string name="default_max_results">3</string>
@@ -54,4 +54,28 @@
         <item>EfficientNet Lite1</item>
         <item>EfficientNet Lite2</item>
     </string-array>
+
+    <!-- Corrected French strings and placeholders -->
+    <string name="flash_enabled">Flash activé</string>
+    <string name="flash_disabled">Flash désactivé</string>
+    <string name="flash_not_available">Flash non disponible</string>
+    <string name="continue_live">Continuer\n(Mode Live)</string>
+    <string name="object_captured">Objet capturé : %1$s</string>
+    <string name="no_detection">Aucune détection en cours</string>
+    <string name="confidence_value">%1$d%%</string>
+    <string name="save_to_history">Enregistrer dans l\'historique</string>
+
+    <!-- Registration and Profile Strings -->
+    <string name="title_create_account">Créer un compte</string>
+    <string name="hint_full_name">Nom complet</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="btn_register">S\'inscrire</string>
+    <string name="text_go_login">Vous avez déjà un compte ? Se connecter</string>
+    <string name="btn_select_photo">Sélectionner une photo</string>
+    <string name="error_fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="title_my_profile">Mon profil</string>
+    <string name="btn_logout">Se déconnecter</string>
+    <string name="label_name">Nom</string>
+    <string name="label_email">E-mail</string>
 </resources>
