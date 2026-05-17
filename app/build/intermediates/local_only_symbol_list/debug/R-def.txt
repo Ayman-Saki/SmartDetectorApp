@@ -75,6 +75,7 @@ id btn_freeze
 id btn_history
 id camera_container
 id camera_fragment
+id changeImageBtn
 id confidence_progress
 id cpu_button
 id emailInput
@@ -141,6 +142,7 @@ id toolbar
 id toolbar_title
 id tvLabel
 id tvScore
+id updateBtn
 id view_finder
 integer bottom_sheet_control_text_min_ems
 layout activity_login_fragment

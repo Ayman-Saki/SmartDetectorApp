@@ -3284,6 +3284,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeImageBtn
 id checkbox
 id checked
 id chronometer
@@ -3729,6 +3730,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateBtn
 id useLogo
 id vertical_only
 id view_finder

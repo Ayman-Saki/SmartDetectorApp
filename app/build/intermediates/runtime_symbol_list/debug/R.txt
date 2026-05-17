@@ -3283,6 +3283,7 @@ int id center_vertical 0x7f090083
 int id chain 0x7f090084
 int id chain2 0x7f090085
 int id chains 0x7f090086
+int id changeImageBtn 0x7f090259
 int id checkbox 0x7f090087
 int id checked 0x7f090088
 int id chronometer 0x7f090089
@@ -3728,6 +3729,7 @@ int id unchecked 0x7f09023b
 int id uniform 0x7f09023c
 int id unlabeled 0x7f09023d
 int id up 0x7f09023e
+int id updateBtn 0x7f09025a
 int id useLogo 0x7f09023f
 int id vertical_only 0x7f090240
 int id view_finder 0x7f090241
