@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-56:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-57:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\c8e2b48a79aff3614f2856203645e24c\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",

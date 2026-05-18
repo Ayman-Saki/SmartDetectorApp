@@ -21,10 +21,16 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.tensorflow.lite.examples.imageclassification.ApiClient;
+import org.tensorflow.lite.examples.imageclassification.ApiService;
 import org.tensorflow.lite.examples.imageclassification.R;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ProfileFragment extends Fragment {
 
@@ -38,6 +44,7 @@ public class ProfileFragment extends Fragment {
 
     private Uri selectedImageUri;
 
+    private ApiService apiService;
     private static final int PICK_IMAGE_REQUEST = 100;
 
     @Nullable
@@ -51,6 +58,10 @@ public class ProfileFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
+        apiService = ApiClient
+                .getClient("http://192.168.1.19:8000/")
+                .create(ApiService.class);
+
         nameText = view.findViewById(R.id.nameText);
         emailText = view.findViewById(R.id.emailText);
 
@@ -62,47 +73,44 @@ public class ProfileFragment extends Fragment {
 
         loadUserData();
 
-        changeImageBtn.setOnClickListener(v -> openGallery());
+        if (changeImageBtn != null) {
+            changeImageBtn.setOnClickListener(v -> openGallery());
+        }
 
-        updateBtn.setOnClickListener(v -> updateProfile());
+        if (updateBtn != null) {
+            updateBtn.setOnClickListener(v -> updateProfile());
+        }
 
-        logoutBtn.setOnClickListener(v -> {
-
-            FirebaseAuth.getInstance().signOut();
-
-            androidx.navigation.NavOptions navOptions =
-                    new androidx.navigation.NavOptions.Builder()
-                            .setPopUpTo(R.id.camera_fragment, true)
-                            .build();
-
-            androidx.navigation.Navigation.findNavController(v)
-                    .navigate(R.id.loginFragment, null, navOptions);
-        });
+        if (logoutBtn != null) {
+            logoutBtn.setOnClickListener(v -> {
+                FirebaseAuth.getInstance().signOut();
+                androidx.navigation.NavOptions navOptions =
+                        new androidx.navigation.NavOptions.Builder()
+                                .setPopUpTo(R.id.camera_fragment, true)
+                                .build();
+                androidx.navigation.Navigation.findNavController(v)
+                        .navigate(R.id.loginFragment, null, navOptions);
+            });
+        }
 
         return view;
     }
 
     private void openGallery() {
-
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-
         startActivityForResult(intent, PICK_IMAGE_REQUEST);
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode,
                                  @Nullable Intent data) {
-
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == PICK_IMAGE_REQUEST
                 && resultCode == Activity.RESULT_OK
                 && data != null
                 && data.getData() != null) {
-
             selectedImageUri = data.getData();
-
             Glide.with(requireContext())
                     .load(selectedImageUri)
                     .placeholder(R.drawable.ic_profile)
@@ -112,13 +120,11 @@ public class ProfileFragment extends Fragment {
     }
 
     private void updateProfile() {
-
         FirebaseUser currentUser = auth.getCurrentUser();
-
         if (currentUser == null) return;
 
         String uid = currentUser.getUid();
-
+        
         String updatedName = nameText.getText() != null
                 ? nameText.getText().toString().trim()
                 : "";
@@ -128,41 +134,45 @@ public class ProfileFragment extends Fragment {
                 : "";
 
         if (updatedName.isEmpty() || updatedEmail.isEmpty()) {
-
             Toast.makeText(getContext(),
                     "Fields cannot be empty",
                     Toast.LENGTH_SHORT).show();
             return;
         }
 
-        currentUser.updateEmail(updatedEmail)
-                .addOnSuccessListener(unused -> {
+        //API Call
+        apiService.updateProfile(
+                uid,
+                updatedName,
+                selectedImageUri != null ? selectedImageUri.toString() : ""
+        ).enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
+                // silent success
+            }
 
-                    Map<String, Object> updates = new HashMap<>();
+            @Override
+            public void onFailure(@NonNull Call<String> call, @NonNull Throwable t) {
+                // silent fail
+            }
+        });
 
-                    updates.put("name", updatedName);
-                    updates.put("email", updatedEmail);
+        Map<String, Object> updates = new HashMap<>();
 
-                    if (selectedImageUri != null) {
-                        updates.put("imageUrl",
-                                selectedImageUri.toString());
-                    }
+        updates.put("name", updatedName);
 
-                    db.collection("users")
-                            .document(uid)
-                            .update(updates)
-                            .addOnSuccessListener(unused1 ->
-                                    Toast.makeText(getContext(),
-                                            "Profile updated",
-                                            Toast.LENGTH_SHORT).show()
-                            )
-                            .addOnFailureListener(e ->
-                                    Toast.makeText(getContext(),
-                                            e.getMessage(),
-                                            Toast.LENGTH_SHORT).show()
-                            );
+        if (selectedImageUri != null) {
+            updates.put("imageUrl", selectedImageUri.toString());
+        }
 
-                })
+        db.collection("users")
+                .document(uid)
+                .update(updates)
+                .addOnSuccessListener(unused ->
+                        Toast.makeText(getContext(),
+                                "Profile updated",
+                                Toast.LENGTH_SHORT).show()
+                )
                 .addOnFailureListener(e ->
                         Toast.makeText(getContext(),
                                 e.getMessage(),
@@ -171,18 +181,27 @@ public class ProfileFragment extends Fragment {
     }
 
     private void loadUserData() {
-
         if (auth.getCurrentUser() == null) return;
-
         String uid = auth.getCurrentUser().getUid();
+
+        apiService.getProfile(uid)
+                .enqueue(new Callback<String>() {
+                    @Override
+                    public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
+                        // silent success
+                    }
+
+                    @Override
+                    public void onFailure(@NonNull Call<String> call, @NonNull Throwable t) {
+                        // silent fail
+                    }
+                });
 
         db.collection("users")
                 .document(uid)
                 .get()
                 .addOnSuccessListener(doc -> {
-
-                    if (doc.exists()) {
-
+                    if (doc.exists() && isAdded()) {
                         String name = doc.getString("name");
                         String email = doc.getString("email");
                         String imageUrl = doc.getString("imageUrl");
@@ -193,15 +212,12 @@ public class ProfileFragment extends Fragment {
                         if (imageUrl != null
                                 && !imageUrl.isEmpty()
                                 && !imageUrl.equals("DEFAULT")) {
-
                             Glide.with(requireContext())
                                     .load(Uri.parse(imageUrl))
                                     .placeholder(R.drawable.ic_profile)
                                     .error(R.drawable.ic_profile)
                                     .into(profileImage);
-
                         } else {
-
                             profileImage.setImageResource(R.drawable.ic_profile);
                         }
                     }

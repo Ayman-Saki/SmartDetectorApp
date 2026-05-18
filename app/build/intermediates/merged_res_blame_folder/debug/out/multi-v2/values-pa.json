@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-56:/values-pa/values-pa.xml",
+            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-57:/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\c38128d97a4a12f5fb83d84e83654994\\transformed\\play-services-basement-18.1.0\\res\\values-pa\\values.xml",

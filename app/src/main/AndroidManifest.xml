@@ -5,9 +5,12 @@
     package="org.tensorflow.lite.examples.imageclassification">
     <!-- Enable instant app support -->
     <dist:module dist:instant="true" /> <!-- Declare features -->
-    <uses-feature android:name="android.hardware.camera"  android:required="true"/> <!-- Declare permissions -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- Declare permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,8 +20,11 @@
         android:supportsRtl="true"
         android:taskAffinity=""
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-
+        <activity
+            android:name=".QrDisplayActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:clearTaskOnLaunch="true"

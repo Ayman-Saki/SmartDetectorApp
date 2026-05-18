@@ -89,4 +89,12 @@
         android:label="Paramètres"
         tools:layout="@layout/fragment_settings" />
 
+    <!-- ================= QR code ================= -->
+
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.QrFragment"
+        android:label="QR Code"
+        tools:layout="@layout/fragment_qr_display" />
+
 </navigation>

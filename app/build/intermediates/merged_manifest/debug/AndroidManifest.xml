@@ -28,6 +28,23 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -39,7 +56,11 @@
         android:supportsRtl="true"
         android:taskAffinity=""
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="org.tensorflow.lite.examples.imageclassification.QrDisplayActivity"
+            android:exported="false" />
         <activity
             android:name="org.tensorflow.lite.examples.imageclassification.MainActivity"
             android:clearTaskOnLaunch="true"
@@ -163,6 +184,14 @@
         <uses-library
             android:name="androidx.window.sidecar"
             android:required="false" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

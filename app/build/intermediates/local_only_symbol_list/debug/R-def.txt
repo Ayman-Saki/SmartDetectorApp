@@ -53,6 +53,7 @@ drawable ic_minus
 drawable ic_nav_home
 drawable ic_plus
 drawable ic_profile
+drawable ic_qr
 drawable ic_settings_blue
 drawable ic_settings_indigo
 drawable icn_chevron_up
@@ -75,6 +76,7 @@ id btn_freeze
 id btn_history
 id camera_container
 id camera_fragment
+id cardQr
 id changeImageBtn
 id confidence_progress
 id cpu_button
@@ -117,6 +119,8 @@ id permissions_fragment
 id pickImageBtn
 id profileFragment
 id profileImage
+id qrFragment
+id qrImage
 id recyclerView_history
 id registerBtn
 id registerFragment
@@ -128,6 +132,7 @@ id save_button
 id settings_fragment
 id spinner_delegate
 id spinner_model
+id subTitleQr
 id theme_spinner
 id threads_minus
 id threads_plus
@@ -138,6 +143,7 @@ id threshold_seekbar
 id threshold_value
 id threshold_value_text
 id title
+id titleQr
 id toolbar
 id toolbar_title
 id tvLabel
@@ -151,6 +157,7 @@ layout activity_profile_fragment
 layout activity_register_fragment
 layout fragment_camera
 layout fragment_history
+layout fragment_qr_display
 layout fragment_settings
 layout info_bottom_sheet
 layout item_classification_result

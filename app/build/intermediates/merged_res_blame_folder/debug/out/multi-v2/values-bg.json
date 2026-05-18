@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-56:/values-bg/values-bg.xml",
+            "outputFile": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-57:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\9200dfb1ed0f999fca5bfb6ffb4e7d0c\\transformed\\material-1.9.0\\res\\values-bg\\values-bg.xml",
@@ -122,6 +122,23 @@
                         "startOffsets": "6161,6435,6543,6655",
                         "endColumns": "110,107,111,109",
                         "endOffsets": "6267,6538,6650,6760"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\70d6ea8e9ca348923e48c1e2c389fe52\\transformed\\zxing-android-embedded-4.3.0\\res\\values-bg\\values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,112,159,311",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "107,154,306,417"
+                    },
+                    "to": {
+                        "startLines": "121,122,123,124",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "11328,11385,11432,11584",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "11380,11427,11579,11690"
                     }
                 }
             ]

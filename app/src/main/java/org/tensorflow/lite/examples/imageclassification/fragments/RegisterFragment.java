@@ -21,10 +21,19 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import org.tensorflow.lite.examples.imageclassification.ApiClient;
+import org.tensorflow.lite.examples.imageclassification.ApiService;
 import org.tensorflow.lite.examples.imageclassification.R;
 
 import java.util.HashMap;
 import java.util.Map;
+
+// 🔥 FASTAPI ADD
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RegisterFragment extends Fragment {
 
@@ -36,6 +45,9 @@ public class RegisterFragment extends Fragment {
 
     private static final int PICK_IMAGE_REQUEST = 1;
     private Uri selectedImageUri;
+
+    // 🔥 FASTAPI
+    private ApiService apiService;
 
     @Nullable
     @Override
@@ -55,6 +67,11 @@ public class RegisterFragment extends Fragment {
         ImageView profileImage = view.findViewById(R.id.profileImage);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) MaterialButton pickImageBtn = view.findViewById(R.id.pickImageBtn);
 
+        // FASTAPI INIT
+        apiService = ApiClient
+                .getClient("http://192.168.1.19:8000/")
+                .create(ApiService.class);
+
         registerBtn.setOnClickListener(v -> registerUser(view));
 
         TextView goLogin = view.findViewById(R.id.goLogin);
@@ -73,6 +90,7 @@ public class RegisterFragment extends Fragment {
         intent.setType("image/*");
         startActivityForResult(intent, PICK_IMAGE_REQUEST);
     }
+
     private void registerUser(View view) {
 
         String name = nameInput.getText() != null ? nameInput.getText().toString().trim() : "";
@@ -84,6 +102,23 @@ public class RegisterFragment extends Fragment {
             return;
         }
 
+        //  FASTAPI CALL (NON-BREAKING)
+        apiService.registerUser(name, email, password)
+                .enqueue(new Callback<String>() {
+                    @Override
+                    public void onResponse(Call<String> call, Response<String> response) {
+                        // just log success
+                    }
+
+                    @Override
+                    public void onFailure(Call<String> call, Throwable t) {
+                        // ignore errors (DO NOT BREAK APP)
+                    }
+                });
+
+        // =========================
+        // FIREBASE (UNCHANGED)
+        // =========================
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
 
@@ -94,6 +129,7 @@ public class RegisterFragment extends Fragment {
                         Map<String, Object> user = new HashMap<>();
                         user.put("name", name);
                         user.put("email", email);
+
                         if (selectedImageUri != null) {
                             user.put("imageUrl", selectedImageUri.toString());
                         } else {
