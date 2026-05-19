@@ -78,6 +78,11 @@ public class CameraFragment extends Fragment
                         .navigate(R.id.micFragment)
         );
 
+        binding.btnChat.setOnClickListener(v ->
+                Navigation.findNavController(v)
+                        .navigate(R.id.chatFragment)
+        );
+
         binding.btnHistory.setOnClickListener(v ->
                 Navigation.findNavController(requireActivity(), R.id.fragment_container)
                         .navigate(R.id.history_fragment)

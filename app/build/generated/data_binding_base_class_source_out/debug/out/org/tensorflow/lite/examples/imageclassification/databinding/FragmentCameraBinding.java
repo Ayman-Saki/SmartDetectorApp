@@ -35,6 +35,9 @@ public final class FragmentCameraBinding implements ViewBinding {
   public final MaterialButton btnCapture;
 
   @NonNull
+  public final MaterialButton btnChat;
+
+  @NonNull
   public final ImageButton btnFlash;
 
   @NonNull
@@ -90,18 +93,19 @@ public final class FragmentCameraBinding implements ViewBinding {
 
   private FragmentCameraBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout bottomButtonsLayout, @NonNull MaterialButton btnCapture,
-      @NonNull ImageButton btnFlash, @NonNull MaterialCardView btnFlashContainer,
-      @NonNull FloatingActionButton btnFreeze, @NonNull MaterialButton btnHistory,
-      @NonNull ConstraintLayout cameraContainer, @NonNull ProgressBar confidenceProgress,
-      @NonNull LinearLayout freezeGroup, @NonNull TextView freezeLabel, @NonNull View freezeOverlay,
-      @NonNull ImageView frozenImage, @NonNull TextView inferenceTime,
-      @NonNull MaterialCardView liveBadgeContainer, @NonNull Button micButton,
-      @NonNull TextView resultConfidence, @NonNull ImageView resultIcon,
+      @NonNull MaterialButton btnChat, @NonNull ImageButton btnFlash,
+      @NonNull MaterialCardView btnFlashContainer, @NonNull FloatingActionButton btnFreeze,
+      @NonNull MaterialButton btnHistory, @NonNull ConstraintLayout cameraContainer,
+      @NonNull ProgressBar confidenceProgress, @NonNull LinearLayout freezeGroup,
+      @NonNull TextView freezeLabel, @NonNull View freezeOverlay, @NonNull ImageView frozenImage,
+      @NonNull TextView inferenceTime, @NonNull MaterialCardView liveBadgeContainer,
+      @NonNull Button micButton, @NonNull TextView resultConfidence, @NonNull ImageView resultIcon,
       @NonNull TextView resultTitle, @NonNull MaterialCardView resultsCard,
       @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.bottomButtonsLayout = bottomButtonsLayout;
     this.btnCapture = btnCapture;
+    this.btnChat = btnChat;
     this.btnFlash = btnFlash;
     this.btnFlashContainer = btnFlashContainer;
     this.btnFreeze = btnFreeze;
@@ -158,6 +162,12 @@ public final class FragmentCameraBinding implements ViewBinding {
       id = R.id.btn_capture;
       MaterialButton btnCapture = ViewBindings.findChildViewById(rootView, id);
       if (btnCapture == null) {
+        break missingId;
+      }
+
+      id = R.id.btnChat;
+      MaterialButton btnChat = ViewBindings.findChildViewById(rootView, id);
+      if (btnChat == null) {
         break missingId;
       }
 
@@ -266,9 +276,10 @@ public final class FragmentCameraBinding implements ViewBinding {
       }
 
       return new FragmentCameraBinding((ConstraintLayout) rootView, bottomButtonsLayout, btnCapture,
-          btnFlash, btnFlashContainer, btnFreeze, btnHistory, cameraContainer, confidenceProgress,
-          freezeGroup, freezeLabel, freezeOverlay, frozenImage, inferenceTime, liveBadgeContainer,
-          micButton, resultConfidence, resultIcon, resultTitle, resultsCard, viewFinder);
+          btnChat, btnFlash, btnFlashContainer, btnFreeze, btnHistory, cameraContainer,
+          confidenceProgress, freezeGroup, freezeLabel, freezeOverlay, frozenImage, inferenceTime,
+          liveBadgeContainer, micButton, resultConfidence, resultIcon, resultTitle, resultsCard,
+          viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

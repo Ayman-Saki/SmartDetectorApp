@@ -1,6 +1,7 @@
 package org.tensorflow.lite.examples.imageclassification;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -30,4 +31,8 @@ public interface ApiService {
             @Field("name") String name,
             @Field("imageUrl") String imageUrl
     );
+
+
+    @POST("/chat")
+    Call<ChatResponse> chat(@Body ChatRequest request);
 }

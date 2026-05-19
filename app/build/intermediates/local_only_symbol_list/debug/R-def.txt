@@ -70,6 +70,7 @@ id action_register_to_login
 id bottom_buttons_layout
 id bottom_navigation
 id bottom_sheet_layout
+id btnChat
 id btn_capture
 id btn_flash
 id btn_flash_container
@@ -79,6 +80,7 @@ id camera_container
 id camera_fragment
 id cardQr
 id changeImageBtn
+id chatFragment
 id confidence_progress
 id cpu_button
 id emailInput
@@ -109,6 +111,8 @@ id logoutBtn
 id max_results_minus
 id max_results_plus
 id max_results_value
+id messageInput
+id messageText
 id micButton
 id micFragment
 id nameInput
@@ -124,6 +128,7 @@ id profileFragment
 id profileImage
 id qrFragment
 id qrImage
+id recyclerView
 id recyclerView_history
 id registerBtn
 id registerFragment
@@ -132,6 +137,7 @@ id result_icon
 id result_title
 id results_card
 id save_button
+id sendButton
 id settings_fragment
 id spinner_delegate
 id spinner_model
@@ -160,13 +166,16 @@ layout activity_main
 layout activity_profile_fragment
 layout activity_register_fragment
 layout fragment_camera
+layout fragment_chat
 layout fragment_history
 layout fragment_mic
 layout fragment_qr_display
 layout fragment_settings
 layout info_bottom_sheet
+layout item_bot_message
 layout item_classification_result
 layout item_history
+layout item_user_message
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground

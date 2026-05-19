@@ -1,51 +1,59 @@
 [
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\activity_profile_fragment.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\activity_profile_fragment.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/item_bot_message.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/item_bot_message.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\activity_login_fragment.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\activity_login_fragment.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/activity_login_fragment.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/activity_login_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\info_bottom_sheet.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\info_bottom_sheet.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_settings.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\fragment_qr_display.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\fragment_qr_display.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/activity_profile_fragment.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/activity_profile_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\item_classification_result.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\item_classification_result.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/info_bottom_sheet.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/info_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\activity_register_fragment.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\activity_register_fragment.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_chat.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\fragment_history.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\fragment_history.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/item_classification_result.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/item_classification_result.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\item_history.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\item_history.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/activity_register_fragment.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/activity_register_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\fragment_settings.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_camera.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/fragment_camera.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\activity_main.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_history.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/fragment_history.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\fragment_camera.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\fragment_camera.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/item_history.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/item_history.xml"
     },
     {
-        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:\\layout\\fragment_mic.xml",
-        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.5\\org.tensorflow.lite.examples.imageclassification.app-main-61:\\layout\\fragment_mic.xml"
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_qr_display.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/fragment_qr_display.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/activity_main.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/activity_main.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/item_user_message.xml",
+        "source": "org.tensorflow.lite.examples.imageclassification.app-main-61:/layout/item_user_message.xml"
     },
     {
         "merged": "org.tensorflow.lite.examples.imageclassification.app-mergeDebugResources-58:/layout/fragment_mic.xml",

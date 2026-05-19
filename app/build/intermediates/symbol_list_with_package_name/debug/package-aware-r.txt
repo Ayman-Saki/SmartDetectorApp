@@ -3286,6 +3286,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnChat
 id btn_capture
 id btn_flash
 id btn_flash_container
@@ -3308,6 +3309,7 @@ id chain
 id chain2
 id chains
 id changeImageBtn
+id chatFragment
 id checkbox
 id checked
 id chronometer
@@ -3502,6 +3504,8 @@ id max_results_minus
 id max_results_plus
 id max_results_value
 id message
+id messageInput
+id messageText
 id micButton
 id micFragment
 id middle
@@ -3597,6 +3601,7 @@ id qrImage
 id radio
 id ratio
 id rectangles
+id recyclerView
 id recyclerView_history
 id registerBtn
 id registerFragment
@@ -3651,6 +3656,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id settings_fragment
 id sharedValueSet
 id sharedValueUnset
@@ -3934,13 +3940,16 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_camera
+layout fragment_chat
 layout fragment_history
 layout fragment_mic
 layout fragment_qr_display
 layout fragment_settings
 layout info_bottom_sheet
+layout item_bot_message
 layout item_classification_result
 layout item_history
+layout item_user_message
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

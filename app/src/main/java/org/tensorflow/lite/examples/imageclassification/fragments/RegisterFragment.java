@@ -46,7 +46,7 @@ public class RegisterFragment extends Fragment {
     private static final int PICK_IMAGE_REQUEST = 1;
     private Uri selectedImageUri;
 
-    // 🔥 FASTAPI
+
     private ApiService apiService;
 
     @Nullable
@@ -67,7 +67,7 @@ public class RegisterFragment extends Fragment {
         ImageView profileImage = view.findViewById(R.id.profileImage);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) MaterialButton pickImageBtn = view.findViewById(R.id.pickImageBtn);
 
-        // FASTAPI INIT
+
         apiService = ApiClient
                 .getClient("http://192.168.1.19:8000/")
                 .create(ApiService.class);
@@ -102,7 +102,7 @@ public class RegisterFragment extends Fragment {
             return;
         }
 
-        //  FASTAPI CALL (NON-BREAKING)
+
         apiService.registerUser(name, email, password)
                 .enqueue(new Callback<String>() {
                     @Override
@@ -116,9 +116,7 @@ public class RegisterFragment extends Fragment {
                     }
                 });
 
-        // =========================
-        // FIREBASE (UNCHANGED)
-        // =========================
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
 
