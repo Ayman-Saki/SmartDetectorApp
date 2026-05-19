@@ -4,6 +4,7 @@ package org.tensorflow.lite.examples.imageclassification.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -70,6 +71,9 @@ public final class FragmentCameraBinding implements ViewBinding {
   public final MaterialCardView liveBadgeContainer;
 
   @NonNull
+  public final Button micButton;
+
+  @NonNull
   public final TextView resultConfidence;
 
   @NonNull
@@ -91,9 +95,10 @@ public final class FragmentCameraBinding implements ViewBinding {
       @NonNull ConstraintLayout cameraContainer, @NonNull ProgressBar confidenceProgress,
       @NonNull LinearLayout freezeGroup, @NonNull TextView freezeLabel, @NonNull View freezeOverlay,
       @NonNull ImageView frozenImage, @NonNull TextView inferenceTime,
-      @NonNull MaterialCardView liveBadgeContainer, @NonNull TextView resultConfidence,
-      @NonNull ImageView resultIcon, @NonNull TextView resultTitle,
-      @NonNull MaterialCardView resultsCard, @NonNull PreviewView viewFinder) {
+      @NonNull MaterialCardView liveBadgeContainer, @NonNull Button micButton,
+      @NonNull TextView resultConfidence, @NonNull ImageView resultIcon,
+      @NonNull TextView resultTitle, @NonNull MaterialCardView resultsCard,
+      @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.bottomButtonsLayout = bottomButtonsLayout;
     this.btnCapture = btnCapture;
@@ -109,6 +114,7 @@ public final class FragmentCameraBinding implements ViewBinding {
     this.frozenImage = frozenImage;
     this.inferenceTime = inferenceTime;
     this.liveBadgeContainer = liveBadgeContainer;
+    this.micButton = micButton;
     this.resultConfidence = resultConfidence;
     this.resultIcon = resultIcon;
     this.resultTitle = resultTitle;
@@ -223,6 +229,12 @@ public final class FragmentCameraBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.micButton;
+      Button micButton = ViewBindings.findChildViewById(rootView, id);
+      if (micButton == null) {
+        break missingId;
+      }
+
       id = R.id.result_confidence;
       TextView resultConfidence = ViewBindings.findChildViewById(rootView, id);
       if (resultConfidence == null) {
@@ -256,7 +268,7 @@ public final class FragmentCameraBinding implements ViewBinding {
       return new FragmentCameraBinding((ConstraintLayout) rootView, bottomButtonsLayout, btnCapture,
           btnFlash, btnFlashContainer, btnFreeze, btnHistory, cameraContainer, confidenceProgress,
           freezeGroup, freezeLabel, freezeOverlay, frozenImage, inferenceTime, liveBadgeContainer,
-          resultConfidence, resultIcon, resultTitle, resultsCard, viewFinder);
+          micButton, resultConfidence, resultIcon, resultTitle, resultsCard, viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

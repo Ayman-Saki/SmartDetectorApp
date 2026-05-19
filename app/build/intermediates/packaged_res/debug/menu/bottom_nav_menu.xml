@@ -22,4 +22,7 @@
         android:id="@+id/qrFragment"
         android:icon="@drawable/ic_qr"
         android:title="QR" />
+
+
+
 </menu>

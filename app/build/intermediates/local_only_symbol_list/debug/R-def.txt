@@ -49,6 +49,7 @@ drawable ic_home
 drawable ic_home_blue
 drawable ic_home_indigo
 drawable ic_launcher_foreground
+drawable ic_mic
 drawable ic_minus
 drawable ic_nav_home
 drawable ic_plus
@@ -108,6 +109,8 @@ id logoutBtn
 id max_results_minus
 id max_results_plus
 id max_results_value
+id micButton
+id micFragment
 id nameInput
 id nameLabel
 id nameLayout
@@ -132,6 +135,7 @@ id save_button
 id settings_fragment
 id spinner_delegate
 id spinner_model
+id startMicBtn
 id subTitleQr
 id theme_spinner
 id threads_minus
@@ -157,6 +161,7 @@ layout activity_profile_fragment
 layout activity_register_fragment
 layout fragment_camera
 layout fragment_history
+layout fragment_mic
 layout fragment_qr_display
 layout fragment_settings
 layout info_bottom_sheet

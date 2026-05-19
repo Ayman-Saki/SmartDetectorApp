@@ -3080,6 +3080,7 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mic
 drawable ic_minus
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -3501,6 +3502,8 @@ id max_results_minus
 id max_results_plus
 id max_results_value
 id message
+id micButton
+id micFragment
 id middle
 id mini
 id month_grid
@@ -3682,6 +3685,7 @@ id src_over
 id standard
 id start
 id startHorizontal
+id startMicBtn
 id startToEnd
 id startVertical
 id staticLayout
@@ -3931,6 +3935,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_camera
 layout fragment_history
+layout fragment_mic
 layout fragment_qr_display
 layout fragment_settings
 layout info_bottom_sheet

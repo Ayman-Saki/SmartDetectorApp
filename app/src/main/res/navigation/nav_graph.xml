@@ -97,4 +97,10 @@
         android:label="QR Code"
         tools:layout="@layout/fragment_qr_display" />
 
+    <fragment
+        android:id="@+id/micFragment"
+        android:name="org.tensorflow.lite.examples.imageclassification.fragments.MicFragment"
+        android:label="Mic"
+        tools:layout="@layout/fragment_mic"/>
+
 </navigation>

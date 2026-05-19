@@ -73,6 +73,11 @@ public class CameraFragment extends Fragment
 
         imageClassifierHelper = ImageClassifierHelper.create(requireContext(), this);
 
+        view.findViewById(R.id.micButton).setOnClickListener(v ->
+                Navigation.findNavController(v)
+                        .navigate(R.id.micFragment)
+        );
+
         binding.btnHistory.setOnClickListener(v ->
                 Navigation.findNavController(requireActivity(), R.id.fragment_container)
                         .navigate(R.id.history_fragment)

@@ -265,6 +265,14 @@
             android:layout_weight="1"
             android:text="Historique"
             app:icon="@drawable/ic_history_blue" />
+        <Button
+            android:id="@+id/micButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎤 Mic"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

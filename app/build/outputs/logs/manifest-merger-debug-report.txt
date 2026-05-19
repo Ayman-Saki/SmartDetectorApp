@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\dell\.gradle\caches\transforms-3\455b4288df222dd5b2764491055071d4\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\dell\.gradle\caches\transforms-3\050a58435f165ba86298afe0ec006d05\transformed\firebase-auth-22.3.1\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] C:\Users\dell\.gradle\caches\transforms-3\f4a42d14ffbc6bc7e82ca5102f1fa913\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:2:1-26:12
@@ -140,9 +140,13 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\dell\.gradl
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\dell\.gradle\caches\transforms-3\c0afe1f1e182d1beed0ab86ee123592b\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 	android:name
 		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:14:22-68
 application
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:15:5-49:19
-INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:15:5-49:19
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:16:5-48:19
+INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:16:5-48:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\dell\.gradle\caches\transforms-3\050a58435f165ba86298afe0ec006d05\transformed\firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\dell\.gradle\caches\transforms-3\050a58435f165ba86298afe0ec006d05\transformed\firebase-auth-22.3.1\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] C:\Users\dell\.gradle\caches\transforms-3\f4a42d14ffbc6bc7e82ca5102f1fa913\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:13:5-24:19
@@ -202,61 +206,55 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\dell\.gradle\ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\dell\.gradle\caches\transforms-3\ee20db5e799093640f55694961ce8d8e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:19:9-41
 	tools:ignore
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:25:9-35
 	android:roundIcon
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:19:9-54
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:22:9-40
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:23:9-40
 	android:taskAffinity
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:21:9-32
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:22:9-32
 	android:usesCleartextTraffic
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:23:9-44
-activity#org.tensorflow.lite.examples.imageclassification.QrDisplayActivity
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:25:9-27:40
-	android:exported
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:26:13-46
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:24:9-44
 activity#org.tensorflow.lite.examples.imageclassification.MainActivity
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:28:9-48:20
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:27:9-47:20
 	android:clearTaskOnLaunch
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:30:13-45
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:29:13-45
 	android:exported
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:31:13-36
 	android:resizeableActivity
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:33:13-46
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:32:13-46
 	android:rotationAnimation
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:33:13-49
 	android:configChanges
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:31:13-91
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:30:13-91
 	tools:targetApi
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:35:13-32
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:34:13-32
 	android:name
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:40:27-74
 meta-data#android.notch_support
-ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:45:13-47:40
+ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:44:13-46:40
 	android:value
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:47:17-37
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:46:17-37
 	android:name
-		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:46:17-53
+		ADDED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:45:17-53
 uses-sdk
 INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml
@@ -660,11 +658,11 @@ ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\dell\.gradle\ca
 	android:name
 		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\dell\.gradle\caches\transforms-3\4ff6a43df6f1b5abd41dd108511e1172\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
+IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
+IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-51:12 reason: tensorflow_lite_support.acceleration.configuration requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\Desktop\smartapp\examples\lite\examples\image_classification\android_java\app\src\main\AndroidManifest.xml:2:1-50:12 reason: tensorflow_lite_support.acceleration.configuration requested WRITE_EXTERNAL_STORAGE
 uses-feature#android.hardware.camera.front
 ADDED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\dell\.gradle\caches\transforms-3\70d6ea8e9ca348923e48c1e2c389fe52\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
 	android:required
